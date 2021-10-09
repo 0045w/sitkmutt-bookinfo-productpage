@@ -1,0 +1,8 @@
+services:
+  productpage:
+    build: .
+    image: ghcr.io/0045w/bookinfo-productpage:dev
+    ports:
+      - "8083:8083"
+    environment:
+      SERVICE_VERSION: v1
